@@ -2,130 +2,62 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>5 Tabel HTML</title>
-
+    <title>Form Tabel</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            padding: 30px;
-        }
-
         table {
             border-collapse: collapse;
-            width: 240px;
-            height: 180px;
+            font-family: Times New Roman, serif;
+            font-size: 18px;
         }
-
         td {
-            border: 2px solid black;
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .text-center {
             text-align: center;
-            font-size: 25px;
         }
     </style>
 </head>
-
 <body>
-<h1>Tugas Tabel</h1>
-<div class="container">
-    <table>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
 
-        <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-        </tr>
-
-        <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td>1</td>
-            <td colspan="2">2</td>
-        </tr>
-
-        <tr>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-        </tr>
-
-        <tr>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-
-        <tr>
-            <td colspan="3">4</td>
-        </tr>
-
-        <tr>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td>1</td>
-            <td colspan="2">2</td>
-        </tr>
-
-        <tr>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-        </tr>
-
-        <tr>
-            <td colspan="2">6</td>
-            <td>7</td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td rowspan="2">1</td>
-            <td>2</td>
-            <td rowspan="2">4</td>
-        </tr>
-
-        <tr>
-            <td>3</td>
-        </tr>
-
-        <tr>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-        </tr>
-    </table>
-</div>
+<table>
+    <tr>
+        <td class="text-right">Text :</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td class="text-right">Password :</td>
+        <td><input type="password"></td>
+    </tr>
+    <tr>
+        <td class="text-right">Radio 1 <input type="radio" name="r" checked></td>
+        <td>Radio 2 <input type="radio" name="r"></td>
+    </tr>
+    <tr>
+        <td class="text-right">checkbox 1 <input type="checkbox" checked></td>
+        <td>checkbox 2 <input type="checkbox" checked></td>
+    </tr>
+    <tr>
+        <td class="text-right">Combo Box :</td>
+        <td>
+            <select>
+                <option>Option 1</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td class="text-right" style="vertical-align: top;">Textarea :</td>
+        <td><textarea rows="3" cols="20"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="text-center">
+            <button type="button">Button</button>
+        </td>
+    </tr>
+</table>
 <a href="index.html">kembali</a>
 </body>
 </html>
