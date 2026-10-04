@@ -2,61 +2,62 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Form Tanpa Tabel</title>
+    <title>Form Tabel</title>
     <style>
-        .form-container {
-            display: inline-block;
-            font-family: serif;
+        table {
+            border-collapse: collapse;
+            font-family: Times New Roman, serif;
+            font-size: 18px;
         }
-        .form-group {
-            margin-bottom: 8px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
+        td {
+            border: 1px solid black;
+            padding: 5px 10px;
         }
-        .form-group label {
-            margin-right: 8px;
+        .text-right {
+            text-align: right;
         }
-        .center-group {
+        .text-center {
             text-align: center;
-            margin-bottom: 8px;
         }
     </style>
 </head>
 <body>
 
-<div class="form-container">
-    <div class="form-group">
-        <label>Text :</label>
-        <input type="text">
-    </div>
-    <div class="form-group">
-        <label>Password :</label>
-        <input type="password">
-    </div>
-    <div class="center-group">
-        Radio 1 <input type="radio" name="radio2" checked> 
-        Radio 2 <input type="radio" name="radio2">
-    </div>
-    <div class="center-group">
-        checkbox 1 <input type="checkbox" checked> 
-        checkbox 2 <input type="checkbox" checked>
-    </div>
-    <div class="form-group">
-        <label>Combo Box :</label>
-        <select>
-            <option>Option 1</option>
-            <option>Option 2</option>
-        </select>
-    </div>
-    <div class="form-group" style="align-items: flex-start;">
-        <label>Textarea :</label>
-        <textarea rows="3" cols="20"></textarea>
-    </div>
-    <div class="center-group">
-        <button type="button">Button</button>
-    </div>
-</div>
-<a href="index.html">kembali</a>
+<table>
+    <tr>
+        <td class="text-right">Text :</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td class="text-right">Password :</td>
+        <td><input type="password"></td>
+    </tr>
+    <tr>
+        <td class="text-right">Radio 1 <input type="radio" name="r" checked></td>
+        <td>Radio 2 <input type="radio" name="r"></td>
+    </tr>
+    <tr>
+        <td class="text-right">checkbox 1 <input type="checkbox" checked></td>
+        <td>checkbox 2 <input type="checkbox" checked></td>
+    </tr>
+    <tr>
+        <td class="text-right">Combo Box :</td>
+        <td>
+            <select>
+                <option>Option 1</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td class="text-right" style="vertical-align: top;">Textarea :</td>
+        <td><textarea rows="3" cols="20"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="text-center">
+            <button type="button">Button</button>
+        </td>
+    </tr>
+</table>
+<a href="index.html">kembali</a>;
 </body>
 </html>
